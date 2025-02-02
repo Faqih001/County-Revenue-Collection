@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Dialog } from "@headlessui/react";
 import data from "@/app/pay/data.json";
 
+// Types and Interfaces for Services Management Page (Admin)
 type BillingRules = {
   [key: string]: any;
 };
