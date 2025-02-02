@@ -70,6 +70,7 @@ const ServicesManagement = () => {
     setIsModalOpen(true);
   };
 
+  // Close Modal Function for Services Management Page (Admin)
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedService(null);
