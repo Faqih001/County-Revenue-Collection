@@ -7,6 +7,7 @@ interface Rate {
     [key: string]: number;
 }
 
+// Interface for service 
 interface Service {
     service_name: string;
     description: string;
