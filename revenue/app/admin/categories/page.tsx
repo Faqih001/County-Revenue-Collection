@@ -86,6 +86,7 @@ const ServicesManagement = () => {
     });
   };
 
+  // Handle Add Service Function for Services Management Page (Admin)
   const handleAdd = () => {
     setServices([...services, newService]);
     closeModal();
