@@ -1,0 +1,125 @@
+{
+  "municipal_services": [
+    
+    {
+      "service_name": "Business Permits",
+      "service_code": "BIZ",
+      "description": "Annual business operation licenses",
+      "service_type": "annual_permit",
+      "billing_rules": {
+        "small_enterprise": {
+          "base_fee": 5000,
+          "processing_fee": 1000
+        },
+        "medium_enterprise": {
+          "base_fee": 15000,
+          "processing_fee": 2000
+        },
+        "large_enterprise": {
+          "base_fee": 30000,
+          "processing_fee": 3000
+        }
+      },
+      "requirements": [
+        "Business registration",
+        "Tax compliance",
+        "Location approval"
+      ],
+      "unit": "ksh",
+      "billing_period": "yearly"
+    },
+    {
+      "service_name": "Land Rates",
+      "service_code": "LND",
+      "description": "Property and land taxation",
+      "service_type": "property_based",
+      "billing_rules": {
+        "residential": {
+          "rate_percentage": 0.1,
+          "minimum_charge": 2000
+        },
+        "commercial": {
+          "rate_percentage": 0.15,
+          "minimum_charge": 5000
+        },
+        "industrial": {
+          "rate_percentage": 0.2,
+          "minimum_charge": 10000
+        }
+      },
+      "penalties": {
+        "late_payment": 0.02,
+        "default_charge": 5000
+      },
+      "unit": "ksh",
+      "billing_period": "yearly"
+    },    
+    {
+      "service_name": "Water and Sewer",
+      "service_code": "WTR",
+      "description": "Supply of clean water and management of wastewater",
+      "service_type": "metered",
+      "billing_rules": {
+        "domestic": {
+          "0-10": 35,
+          "11-30": 40,
+          "31-60": 50,
+          "above_60": 60
+        },
+        "commercial": {
+          "0-50": 50,
+          "51-100": 60,
+          "above_100": 70
+        }
+      },
+      "connection_fee": 2500.00,
+      "unit": "ksh",
+      "billing_period": "monthly"
+    },
+    {
+      "service_name": "Solid Waste Collection",
+      "service_code": "WST",
+      "description": "Garbage, recycling, and compost collection",
+      "service_type": "subscription",
+      "billing_rules": {
+        "residential": {
+          "small_bin": 1500,
+          "medium_bin": 2000,
+          "large_bin": 2500
+        },
+        "commercial": {
+          "small_bin": 3000,
+          "medium_bin": 4000,
+          "large_bin": 5000
+        }
+      },
+      "unit": "ksh",
+      "billing_period": "monthly"
+    },
+    {
+      "service_name": "Parking",
+      "service_code": "PRK",
+      "description": "Municipal parking services",
+      "service_type": "time_based",
+      "billing_rules": {
+        "hourly": {
+          "car": 250,
+          "lorry": 400,
+          "motorcycle": 100
+        },
+        "daily": {
+          "car": 1000,
+          "lorry": 1600,
+          "motorcycle": 400
+        },
+        "monthly": {
+          "car": 15000,
+          "lorry": 25000,
+          "motorcycle": 6000
+        }
+      },
+      "unit": "ksh",
+      "zones": ["CBD", "RESIDENTIAL", "INDUSTRIAL"]
+    }
+  ]
+}
