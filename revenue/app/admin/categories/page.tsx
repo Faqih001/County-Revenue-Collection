@@ -163,6 +163,8 @@ const ServicesManagement = () => {
           }
           className={inputClassName}
           required
+          title="Service Type"
+          placeholder="Enter service type"
         />
       </div>
       <div className={groupClassName}>
