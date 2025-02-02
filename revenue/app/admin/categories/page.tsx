@@ -9,6 +9,7 @@ type BillingRules = {
   [key: string]: any;
 };
 
+// Service Interface for Services Management Page (Admin)
 type Service = {
   service_name: string;
   service_code: string;
