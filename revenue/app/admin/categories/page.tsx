@@ -92,6 +92,7 @@ const ServicesManagement = () => {
     closeModal();
   };
 
+  // Handle Edit Service Function for Services Management Page (Admin)
   const handleEdit = () => {
     if (selectedService) {
       setServices(
