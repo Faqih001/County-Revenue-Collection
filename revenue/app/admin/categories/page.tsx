@@ -137,6 +137,7 @@ const ServicesManagement = () => {
           }
           className={inputClassName}
           placeholder="Enter service name"
+          title="Service Name"
           required
         />
       </div>
@@ -151,6 +152,8 @@ const ServicesManagement = () => {
           className={inputClassName}
           disabled={modalType === "edit"}
           required
+          title="Service Code"
+          placeholder="Enter service code"
         />
       </div>
       <div className={groupClassName}>
