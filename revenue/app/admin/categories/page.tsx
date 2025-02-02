@@ -124,6 +124,7 @@ const ServicesManagement = () => {
   const labelClassName = "block text-sm font-medium text-gray-700 mb-1";
   const groupClassName = "mb-4";
 
+  // Render Form Fields Function for Services Management Page (Admin)
   const renderFormFields = () => (
     <>
       <div className={groupClassName}>
