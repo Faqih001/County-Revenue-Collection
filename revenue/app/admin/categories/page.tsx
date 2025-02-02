@@ -217,6 +217,8 @@ const ServicesManagement = () => {
           }
           className={inputClassName}
           required
+          title="Unique Identifier"
+          placeholder="Enter unique identifier"
         />
       </div>
       <div className={groupClassName}>
