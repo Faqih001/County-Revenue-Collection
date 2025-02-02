@@ -16,6 +16,7 @@ interface Service {
     billing_period: string;
 }
 
+// Interface for MunicipalServicesProps
 interface MunicipalServicesProps {
     initialServices: Service[];
 }
