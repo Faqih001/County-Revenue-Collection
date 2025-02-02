@@ -136,6 +136,7 @@ const ServicesManagement = () => {
             setNewService({ ...newService, service_name: e.target.value })
           }
           className={inputClassName}
+          placeholder="Enter service name"
           required
         />
       </div>
