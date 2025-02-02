@@ -21,6 +21,7 @@ type Service = {
   uniqueIdentifier: string;
 };
 
+// Services Management Page (Admin)
 const ServicesManagement = () => {
   const [services, setServices] = useState<Service[]>([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
