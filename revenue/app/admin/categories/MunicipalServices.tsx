@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+// Interface for rate 
 interface Rate {
     [key: string]: number;
 }
