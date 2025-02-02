@@ -190,6 +190,8 @@ const ServicesManagement = () => {
           }
           className={inputClassName}
           required
+          title="Unit"
+          placeholder="Enter unit"
         />
       </div>
       <div className={groupClassName}>
