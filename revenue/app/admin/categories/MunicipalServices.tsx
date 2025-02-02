@@ -34,6 +34,7 @@ const MunicipalServices: React.FC<MunicipalServicesProps> = ({ initialServices }
         billing_period: "",
     });
 
+    // State hooks for editingRate 
     const [editingRate, setEditingRate] = useState<{ index: number; key: string; value: number } | null>(null);
 
     // Function to add a new service
