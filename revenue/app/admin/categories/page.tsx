@@ -176,6 +176,8 @@ const ServicesManagement = () => {
           }
           className={inputClassName}
           required
+          title="Description"
+          placeholder="Enter description"
         />
       </div>
       <div className={groupClassName}>
