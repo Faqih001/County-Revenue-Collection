@@ -40,6 +40,7 @@ const ServicesManagement = () => {
     uniqueIdentifier: "",
   });
 
+  // Fetch Services Data from JSON File
   useEffect(() => {
     const fetchServices = async () => {
       setServices(data.municipal_services);
