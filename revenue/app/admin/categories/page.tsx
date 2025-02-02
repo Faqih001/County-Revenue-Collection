@@ -203,6 +203,8 @@ const ServicesManagement = () => {
             setNewService({ ...newService, billing_period: e.target.value })
           }
           className={inputClassName}
+          title="Billing Period"
+          placeholder="Enter billing period"
         />
       </div>
       <div className={groupClassName}>
