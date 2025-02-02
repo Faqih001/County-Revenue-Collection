@@ -106,6 +106,7 @@ const ServicesManagement = () => {
     }
   };
 
+  // Handle Delete Service Function for Services Management Page (Admin)
   const handleDelete = () => {
     if (selectedService) {
       setServices(
