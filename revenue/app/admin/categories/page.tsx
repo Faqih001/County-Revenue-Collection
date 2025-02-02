@@ -27,6 +27,8 @@ const ServicesManagement = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalType, setModalType] = useState<"add" | "edit" | "delete">("add");
   const [selectedService, setSelectedService] = useState<Service | null>(null);
+
+  // New Service State for Services Management Page (Admin)
   const [newService, setNewService] = useState<Service>({
     service_name: "",
     service_code: "",
