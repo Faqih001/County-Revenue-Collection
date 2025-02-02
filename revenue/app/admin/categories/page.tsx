@@ -48,6 +48,7 @@ const ServicesManagement = () => {
     fetchServices();
   }, []);
 
+  // Open Modal Function for Services Management Page (Admin)
   const openModal = (
     type: "add" | "edit" | "delete",
     service: Service | null = null
