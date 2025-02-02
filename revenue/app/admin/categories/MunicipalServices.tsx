@@ -23,6 +23,8 @@ interface MunicipalServicesProps {
 
 // MunicipalServices component with initialServices prop of type Service[] 
 const MunicipalServices: React.FC<MunicipalServicesProps> = ({ initialServices }) => {
+
+    // State hooks for services and newService 
     const [services, setServices] = useState<Service[]>(initialServices);
     const [newService, setNewService] = useState<Service>({
         service_name: "",
