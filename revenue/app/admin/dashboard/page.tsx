@@ -29,6 +29,7 @@ export default function Page() {
 
         //If the result is successful, the total revenue and total transactions are set
         if (result.success) {
+          // Set the total revenue and total transactions in the state
           setTotalRevenue(result.data.total_amount);
           setTotalTransactions(result.data.total_transactions);
         } else {
