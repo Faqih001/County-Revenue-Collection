@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 
+// DashboardPage Component that fetches and displays the payment data from the API endpoint /api/dashboard
 const DashboardPage = () => {
   const [dashboardData, setDashboardData] = useState(null);
 
