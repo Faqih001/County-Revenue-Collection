@@ -26,6 +26,7 @@ export default function Layout({
   // Get the email address of the user
   const email = user.emailAddresses[0].emailAddress;
 
+  // If the user is not an admin, display an access denied message
   if (email !== 'admin@revenue.ke') {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
