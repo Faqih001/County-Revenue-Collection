@@ -10,6 +10,7 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Get the user object from the useUser hook
   const { isLoaded, isSignedIn, user } = useUser();
 
   if (!isLoaded) {
