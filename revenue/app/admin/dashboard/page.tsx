@@ -9,6 +9,8 @@ export default function Page() {
 
   // State to hold the total revenue and total transactions fetched from the server
   const [totalRevenue, setTotalRevenue] = useState<number | null>(null);
+
+  // State to hold the total transactions fetched from the server
   const [totalTransactions, setTotalTransactions] = useState<number | null>(null);
 
   useEffect(() => {
