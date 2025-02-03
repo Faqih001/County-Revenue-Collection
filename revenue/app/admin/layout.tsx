@@ -23,6 +23,7 @@ export default function Layout({
     return <RedirectToSignIn />;
   }
 
+  // Get the email address of the user
   const email = user.emailAddresses[0].emailAddress;
 
   if (email !== 'admin@revenue.ke') {
