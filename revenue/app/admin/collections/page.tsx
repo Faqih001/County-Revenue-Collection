@@ -27,6 +27,7 @@ const DashboardPage = () => {
   // If the dashboard data is not available, display a loading message in the center of the screen
   if (!dashboardData) return <div className="flex items-center justify-center min-h-screen">Loading...</div>;
 
+  // If the dashboard data is available, display the payment data in a table
   return (
     <div className="p-6 mx-auto max-w-7xl">
       <h1 className="mb-8 text-3xl font-bold text-gray-900">Payment Dashboard</h1>
