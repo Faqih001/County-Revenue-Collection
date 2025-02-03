@@ -15,6 +15,8 @@ export default function Page() {
 
   // Fetch the total revenue and total transactions from the server
   useEffect(() => {
+
+    // Function to fetch the revenue data from the server
     const fetchRevenueData = async () => {
       try {
         const response = await fetch('/api/revenue');
