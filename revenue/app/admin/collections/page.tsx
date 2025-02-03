@@ -24,6 +24,7 @@ const DashboardPage = () => {
     fetchDashboardData();
   }, []);
 
+  // If the dashboard data is not available, display a loading message in the center of the screen
   if (!dashboardData) return <div className="flex items-center justify-center min-h-screen">Loading...</div>;
 
   return (
