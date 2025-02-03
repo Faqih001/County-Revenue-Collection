@@ -9,6 +9,8 @@ const DashboardPage = () => {
 
   // Fetch the dashboard data from the API endpoint /api/dashboard when the component mounts and store it in the state
   useEffect(() => {
+
+    // Function to fetch the dashboard data from the API endpoint /api/dashboard
     const fetchDashboardData = async () => {
       try {
         const response = await fetch('/api/dashboard');
