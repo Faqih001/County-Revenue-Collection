@@ -6,6 +6,8 @@ import Transactions from '@/app/admin/collections/page'; // Adjusted import stat
 
 // Define the Page component that will be rendered by the server and the client
 export default function Page() {
+
+  // State to hold the total revenue and total transactions fetched from the server
   const [totalRevenue, setTotalRevenue] = useState<number | null>(null);
   const [totalTransactions, setTotalTransactions] = useState<number | null>(null);
 
