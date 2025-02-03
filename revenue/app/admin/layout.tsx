@@ -4,6 +4,7 @@ import { useUser, RedirectToSignIn } from '@clerk/nextjs';
 import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
 import Link from 'next/link';
 
+// Define the Layout component that will be rendered by the server and the client 
 export default function Layout({
   children,
 }: Readonly<{
