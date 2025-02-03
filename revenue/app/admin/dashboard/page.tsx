@@ -26,6 +26,8 @@ export default function Page() {
 
         //The response is converted to JSON format and stored in the result variable
         const result = await response.json();
+
+        //If the result is successful, the total revenue and total transactions are set
         if (result.success) {
           setTotalRevenue(result.data.total_amount);
           setTotalTransactions(result.data.total_transactions);
