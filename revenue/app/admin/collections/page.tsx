@@ -7,6 +7,7 @@ const DashboardPage = () => {
   // State to store the dashboard data
   const [dashboardData, setDashboardData] = useState(null);
 
+  // Fetch the dashboard data from the API endpoint /api/dashboard when the component mounts and store it in the state
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
