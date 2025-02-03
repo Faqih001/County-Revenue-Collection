@@ -13,6 +13,7 @@ export default function Layout({
   // Get the user object from the useUser hook
   const { isLoaded, isSignedIn, user } = useUser();
 
+  // If the user object is not loaded, display a loading message
   if (!isLoaded) {
     return <div>Loading...</div>;
   }
