@@ -12,6 +12,7 @@ const DashboardPage = () => {
 
     // Function to fetch the dashboard data from the API endpoint /api/dashboard
     const fetchDashboardData = async () => {
+      // Fetch the dashboard data from the API endpoint /api/dashboard
       try {
         const response = await fetch('/api/dashboard');
         const data = await response.json();
