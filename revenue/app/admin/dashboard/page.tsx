@@ -21,6 +21,7 @@ export default function Page() {
 
       // Fetch the revenue data from the server
       try {
+        //Response from the server is fetched and stored in the response variable
         const response = await fetch('/api/revenue');
         const result = await response.json();
         if (result.success) {
