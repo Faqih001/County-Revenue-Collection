@@ -18,6 +18,7 @@ export default function Layout({
     return <div>Loading...</div>;
   }
 
+  // If the user is not signed in, redirect to the sign-in page
   if (!isSignedIn) {
     return <RedirectToSignIn />;
   }
