@@ -18,6 +18,8 @@ export default function Page() {
 
     // Function to fetch the revenue data from the server
     const fetchRevenueData = async () => {
+
+      // Fetch the revenue data from the server
       try {
         const response = await fetch('/api/revenue');
         const result = await response.json();
