@@ -23,6 +23,8 @@ export default function Page() {
       try {
         //Response from the server is fetched and stored in the response variable
         const response = await fetch('/api/revenue');
+
+        //The response is converted to JSON format and stored in the result variable
         const result = await response.json();
         if (result.success) {
           setTotalRevenue(result.data.total_amount);
