@@ -4,6 +4,7 @@ import data from '@/app/pay/data.json';
 import Link from 'next/link';
 import Transactions from '@/app/admin/collections/page'; // Adjusted import statement
 
+// Define the Page component that will be rendered by the server and the client
 export default function Page() {
   const [totalRevenue, setTotalRevenue] = useState<number | null>(null);
   const [totalTransactions, setTotalTransactions] = useState<number | null>(null);
