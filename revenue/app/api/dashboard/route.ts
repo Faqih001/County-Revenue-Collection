@@ -7,6 +7,7 @@ import { auth } from '@clerk/nextjs/server';
 
 //Dashboard API to fetch all payments for the admin user
 export async function GET(response: NextResponse) {
+  // Get the user ID from the auth function
   try {
     const allPayments = await db
       .select({
