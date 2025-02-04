@@ -65,6 +65,7 @@ interface PaymentRequest {
     customerType?: string;
 }
 
+// Service payment validation response 
 interface ServiceValidation {
     isValid: boolean;
     missingFields: string[];
