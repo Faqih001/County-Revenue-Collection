@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {ContentLayout} from '@/components/admin-panel/content-layout';
 
+// Define the Home component that will be rendered by the server and the client
 export default function Home() {
   return (
     <ContentLayout title="Revenue Dashboard">
