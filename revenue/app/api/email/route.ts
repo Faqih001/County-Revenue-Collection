@@ -6,6 +6,8 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 // API to send an email with the receipt to the user
 export async function POST({ email, services, first_name }) {
+
+    // Send the email using the Resend API client
     try {
         const { data, error } = await resend.emails.send({
             from: 'Acme <onboarding@resend.dev>',
