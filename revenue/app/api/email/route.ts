@@ -9,6 +9,8 @@ export async function POST({ email, services, first_name }) {
 
     // Send the email using the Resend API client
     try {
+
+        // Send the email using the Resend API client and the EmailTemplate component
         const { data, error } = await resend.emails.send({
             from: 'Acme <onboarding@resend.dev>',
             to: email,
