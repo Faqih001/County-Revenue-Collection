@@ -71,6 +71,7 @@ interface ServiceValidation {
     missingFields: string[];
 }
 
+// Resend email service instance 
 const resend = new Resend(process.env.RESEND_API);
 let intasend = new IntaSend(
     'ISPubKey_test_eda9a8be-bbc9-4f5d-a0ef-54a85960789c',
