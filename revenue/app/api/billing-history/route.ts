@@ -4,6 +4,8 @@ import { NextResponse } from "next/server";
 export async function GET(request: Request) {
     // Import the auth and db functions
     const { userId } = auth();
+
+    // If the user is not signed in, return a 401 Unauthorized
     if (!userId) {
         return new NextResponse("Unauthorized", { status: 401 });
     }
