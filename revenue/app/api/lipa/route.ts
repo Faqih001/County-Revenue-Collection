@@ -87,6 +87,7 @@ async function saveWaterRecord(
     reading: number,
     amount: number
   ): Promise<void> {
+    // Get previous reading to calculate consumption
     const [previousReading] = await db
       .select()
       .from(meterReadings)
