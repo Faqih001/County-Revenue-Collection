@@ -1,6 +1,7 @@
 import { EmailTemplate } from '@/components/ui/email';
 import { Resend } from 'resend';
 
+// Resend API key from the environment variables in .env.local
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST({ email, services, first_name }) {
