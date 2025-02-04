@@ -8,6 +8,7 @@ interface ServiceRecord {
     metadata: Record<string, any>;
   }
   
+  // Water and Parking service records
   interface WaterRecord extends ServiceRecord {
     current_reading: number;
     previous_reading: number;
