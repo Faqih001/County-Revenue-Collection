@@ -10,6 +10,7 @@ export async function GET(request: Request) {
         return new NextResponse("Unauthorized", { status: 401 });
     }
 
+    // Get the service query parameter from the URL
     const { searchParams } = new URL(request.url);
     const service = searchParams.get('service');
 
