@@ -12,6 +12,8 @@ export async function GET(request: Request) {
 
     // Get the service query parameter from the URL
     const { searchParams } = new URL(request.url);
+
+    // Get the service query parameter from the URL and decode it
     const service = searchParams.get('service');
 
     const history = await db.select()
