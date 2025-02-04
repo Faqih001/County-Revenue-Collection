@@ -43,7 +43,7 @@ import { Resend } from 'resend';
 import { EmailTemplate } from '@/components/ui/email';
 const IntaSend = require('intasend-node');
 
-
+// Service payment request and processing route handler for the Lipa Na M-Pesa API 
 interface PaymentRequest {
     serviceCode: string;
     serviceName: string;
