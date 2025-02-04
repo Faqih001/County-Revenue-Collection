@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 
 // app/api/billing-history/route.ts
 export async function GET(request: Request) {
+    // Import the auth and db functions
     const { userId } = auth();
     if (!userId) {
         return new NextResponse("Unauthorized", { status: 401 });
