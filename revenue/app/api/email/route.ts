@@ -22,6 +22,7 @@ export async function POST({ email, services, first_name }) {
             }),
         });
 
+        // If there is an error, return the error
         if (error) {
             return Response.json({ error }, { status: 500 });
         }
