@@ -16,6 +16,7 @@ interface ServiceRecord {
     rate_per_unit: number;
   }
   
+  // Parking service records
   interface ParkingRecord extends ServiceRecord {
     vehicle_type: string;
     plate_number: string;
