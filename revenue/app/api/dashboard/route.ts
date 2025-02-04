@@ -5,6 +5,7 @@ import { desc } from 'drizzle-orm';
 import { eq } from 'drizzle-orm/expressions';
 import { auth } from '@clerk/nextjs/server';
 
+//Dashboard API to fetch all payments for the admin user
 export async function GET(response: NextResponse) {
   try {
     const allPayments = await db
