@@ -1,3 +1,4 @@
+// Service payment processing route handler for the Lipa Na M-Pesa API
 interface ServiceRecord {
     id: number;
     service_account_id: number;
