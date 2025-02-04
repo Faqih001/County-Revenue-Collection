@@ -95,6 +95,7 @@ async function saveWaterRecord(
       .orderBy(desc(meterReadings.reading_date))
       .limit(1);
   
+    // Calculate consumption and save records
     const consumption = previousReading 
       ? reading - previousReading.current_reading 
       : 0;
