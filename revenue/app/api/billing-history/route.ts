@@ -16,6 +16,7 @@ export async function GET(request: Request) {
     // Get the service query parameter from the URL and decode it
     const service = searchParams.get('service');
 
+    // Get the billing history for the user from the database
     const history = await db.select()
         .from(transactions)
         .where(eq(transactions.user_id, userId))
