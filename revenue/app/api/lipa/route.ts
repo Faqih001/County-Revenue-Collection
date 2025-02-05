@@ -166,6 +166,7 @@ async function saveWaterRecord(
   export async function POST(request: Request) {
     // Check if user is authenticated and exists in the database
     try {
+      // Authenticate user and get user ID
       const { userId } = await auth();
       if (!userId) {
         return NextResponse.json(
