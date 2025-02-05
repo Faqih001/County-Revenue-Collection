@@ -186,6 +186,7 @@ async function saveWaterRecord(
   
       // Ensure user exists in DB
       await db.transaction(async (tx) => {
+        // Check if user exists in the database and create if not
         const [dbUser] = await tx
           .select()
           .from(users)
