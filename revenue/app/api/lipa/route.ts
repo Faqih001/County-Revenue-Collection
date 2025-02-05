@@ -312,6 +312,7 @@ function validateServiceFields(body: PaymentRequest): ServiceValidation {
   // Validate required fields based on the service code
     const missingFields: string[] = [];
     
+    // Add missing fields based on the service code
     switch (body.serviceCode) {
         case 'WTR':
             if (!body.usageType) missingFields.push('usageType');
