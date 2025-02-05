@@ -306,6 +306,7 @@ function handleError(error) {
     return NextResponse.json({ success: false, message: 'Failed to process payment', error: errorMessage }, { status: 500 });
 }
 
+// Function to validate service-specific fields based on the service code
 function validateServiceFields(body: PaymentRequest): ServiceValidation {
     const missingFields: string[] = [];
     
