@@ -164,6 +164,7 @@ async function saveWaterRecord(
   
   // Save Water Record Post Route Handler 
   export async function POST(request: Request) {
+    // Check if user is authenticated and exists in the database
     try {
       const { userId } = await auth();
       if (!userId) {
