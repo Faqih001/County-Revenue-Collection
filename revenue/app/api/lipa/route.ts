@@ -344,6 +344,7 @@ function validateServiceFields(body: PaymentRequest): ServiceValidation {
     return { isValid: missingFields.length === 0, missingFields };
 }
 
+// Function to get service-specific details based on the service code
 function getServiceSpecificDetails(body: PaymentRequest) {
     switch (body.serviceCode) {
         case 'WTR':
