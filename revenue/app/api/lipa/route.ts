@@ -175,6 +175,7 @@ async function saveWaterRecord(
         );
       }
   
+      // Get current user details from Clerk API 
       const user = await currentUser();
       if (!user) {
         return NextResponse.json(
