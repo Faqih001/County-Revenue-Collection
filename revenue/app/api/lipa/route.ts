@@ -209,6 +209,7 @@ async function saveWaterRecord(
       
       // Validate request
       const validation = validateServiceFields(body);
+      // Return error response if validation fails 
       if (!validation.isValid) {
         return NextResponse.json({
           success: false,
