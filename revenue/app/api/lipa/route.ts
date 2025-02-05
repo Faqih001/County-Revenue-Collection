@@ -249,6 +249,7 @@ async function saveWaterRecord(
   
       // Save service-specific records
       await db.transaction(async (tx) => {
+        // Save water or parking record
         if (body.serviceCode === 'WTR' && body.reading) {
           await saveWaterRecord(
             serviceAccountId!,
