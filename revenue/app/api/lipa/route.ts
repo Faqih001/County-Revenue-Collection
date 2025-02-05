@@ -308,6 +308,8 @@ function handleError(error) {
 
 // Function to validate service-specific fields based on the service code
 function validateServiceFields(body: PaymentRequest): ServiceValidation {
+
+  // Validate required fields based on the service code
     const missingFields: string[] = [];
     
     switch (body.serviceCode) {
