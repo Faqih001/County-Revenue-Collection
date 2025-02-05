@@ -367,6 +367,7 @@ function getServiceSpecificDetails(body: PaymentRequest) {
     }
 }
 
+// Function to calculate processing fee
 function calculateProcessingFee(amount: number): number {
     // 2% processing fee, minimum 50 KSH, maximum 1000 KSH
     return Math.min(Math.max(amount * 0.02, 50), 1000);
