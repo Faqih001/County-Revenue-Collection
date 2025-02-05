@@ -100,6 +100,7 @@ async function saveWaterRecord(
       ? reading - previousReading.current_reading 
       : 0;
   
+    // Save records in a transaction to ensure data integrity 
     await db.transaction(async (tx) => {
       // Save meter reading
       await tx.insert(meterReadings).values({
