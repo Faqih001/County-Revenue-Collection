@@ -204,6 +204,7 @@ async function saveWaterRecord(
         }
       });
   
+      // Parse request body and validate fields
       const body = await request.json() as PaymentRequest;
       
       // Validate request
