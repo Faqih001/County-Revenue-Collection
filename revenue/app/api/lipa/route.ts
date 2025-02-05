@@ -373,6 +373,7 @@ function calculateProcessingFee(amount: number): number {
     return Math.min(Math.max(amount * 0.02, 50), 1000);
 }
 
+// Function to send email receipt
 const sendEmail = async (email:string, first_name:string, services:any) => {
     try {
         console.log('Sending email to:', email, first_name, services);
