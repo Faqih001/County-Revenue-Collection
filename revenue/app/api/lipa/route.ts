@@ -346,6 +346,7 @@ function validateServiceFields(body: PaymentRequest): ServiceValidation {
 
 // Function to get service-specific details based on the service code
 function getServiceSpecificDetails(body: PaymentRequest) {
+  //  Get service-specific details based on the service code
     switch (body.serviceCode) {
         case 'WTR':
             return { usageType: body.usageType, reading: body.reading };
