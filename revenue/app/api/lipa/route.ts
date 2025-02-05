@@ -226,6 +226,7 @@ async function saveWaterRecord(
       // Create or get service account
       let serviceAccountId = body.serviceAccountId;
       if (!serviceAccountId) {
+        // Create service account if it doesn't exist
         const [serviceAccount] = await db.insert(serviceAccounts).values({
           user_id: userId,
           service_type: body.serviceCode,
