@@ -375,6 +375,7 @@ function calculateProcessingFee(amount: number): number {
 
 // Function to send email receipt
 const sendEmail = async (email:string, first_name:string, services:any) => {
+  // Send email receipt using Resend API
     try {
         console.log('Sending email to:', email, first_name, services);
         const { data, error } = await resend.emails.send({
