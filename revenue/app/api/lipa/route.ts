@@ -305,6 +305,7 @@ async function saveWaterRecord(
 
 // Service payment processing route handler for the Lipa Na M-Pesa API
 function handleError(error) {
+  // Log error and return error response to the client
     const errorMessage = error instanceof Buffer ? error.toString() : error.message;
     return NextResponse.json({ success: false, message: 'Failed to process payment', error: errorMessage }, { status: 500 });
 }
