@@ -74,6 +74,7 @@ const sendEmail = async (email: string, first_name: string, services) => {
             return Response.json({ error }, { status: 500 });
         }
 
+        // Return the data from the email service
         return Response.json(data);
     } catch (error) {
         return Response.json({ error }, { status: 500 });
