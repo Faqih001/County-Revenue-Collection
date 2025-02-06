@@ -17,6 +17,7 @@ export const GET = async (request: Request) => {
       })
       .from(payments);
 
+    // Return total revenue and total transactions
     return NextResponse.json({ success: true, data: totalRevenue[0] });
   } catch (error) {
     console.error('Error fetching revenue data:', error);
