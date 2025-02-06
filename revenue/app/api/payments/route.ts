@@ -125,6 +125,8 @@ export async function POST(request: Request) {
 
   //Try to process the payment request and catch any errors
   try {
+
+    // Get the user ID from the Clerk authentication
     const { userId } = await auth();
     if (!userId) {
       return NextResponse.json(
