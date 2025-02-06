@@ -37,6 +37,7 @@ export async function GET(
   request: Request,
   context: { params: { serviceCode: string } }
 ) {
+  // Fetch the last payment details for the service
   try {
     const { serviceCode } = context.params;
     const { userId } = await auth();
