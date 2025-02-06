@@ -69,6 +69,7 @@ const sendEmail = async (email: string, first_name: string, services) => {
 
         console.log('Email sent:');
 
+        // Log any errors that occurred while sending the email
         if (error) {
             return Response.json({ error }, { status: 500 });
         }
