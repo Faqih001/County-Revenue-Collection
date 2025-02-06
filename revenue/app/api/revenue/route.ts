@@ -20,6 +20,7 @@ export const GET = async (request: Request) => {
     // Return total revenue and total transactions
     return NextResponse.json({ success: true, data: totalRevenue[0] });
   } catch (error) {
+    // Log error and return error response
     console.error('Error fetching revenue data:', error);
     return NextResponse.json({ success: false, message: 'Failed to fetch revenue data' }, { status: 500 });
   }
