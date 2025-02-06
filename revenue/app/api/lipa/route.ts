@@ -281,6 +281,7 @@ async function saveWaterRecord(
         body
       );
   
+      // Return success response with transaction details
       return NextResponse.json({
         success: true,
         message: 'Payment processed successfully',
