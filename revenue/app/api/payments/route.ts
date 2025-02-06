@@ -155,6 +155,7 @@ export async function POST(request: Request) {
     const rawBody = await request.json();
     console.log('Payment request:', rawBody);
     
+    // Create payment request body object
     const body: PaymentRequest = {
       serviceCode: rawBody.serviceCode,
       amount: rawBody.calculatedCost,
