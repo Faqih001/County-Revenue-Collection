@@ -39,9 +39,12 @@ export async function GET(
 ) {
   // Fetch the last payment details for the service
   try {
+
+    // Fetch the service code and user ID
     const { serviceCode } = context.params;
     const { userId } = await auth();
     
+    //
     if (!userId) {
       return NextResponse.json(
         { success: false, message: 'Unauthorized' },
