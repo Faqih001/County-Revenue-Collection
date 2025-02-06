@@ -39,6 +39,7 @@ interface ServiceData {
   };
 }
 
+// Email template props interface
 interface EmailTemplateProps {
   firstName: string;
   email: string;
