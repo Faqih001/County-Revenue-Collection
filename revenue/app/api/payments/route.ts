@@ -46,6 +46,7 @@ interface EmailTemplateProps {
   services: ServiceData;
 }
 
+// Payment request interface
 interface PaymentRequest {
   serviceCode: string;
   amount: number;
