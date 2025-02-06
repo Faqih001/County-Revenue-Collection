@@ -171,6 +171,7 @@ export async function POST(request: Request) {
       }
     };
 
+    // Generate transaction ID
     const transactionId = `${body.serviceCode}-${Date.now()}`;
 
     // Process payment through IntaSend
