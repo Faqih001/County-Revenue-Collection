@@ -34,8 +34,7 @@ export async function POST(request: Request) {
         // send email
         await sendEmail(email, first_name, services);
 
-    
-
+        // Return the response from the IntaSend payment gateway
         return NextResponse.json(response);
 
     } catch (error: any) {
