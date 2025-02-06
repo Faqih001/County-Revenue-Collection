@@ -106,6 +106,7 @@ async function getServiceAccount(userId: string, serviceCode: string, accountNum
       )
     );
 
+  // Create service account if not found for user
   if (!serviceAccount) {
     [serviceAccount] = await db.insert(serviceAccounts)
       .values({
