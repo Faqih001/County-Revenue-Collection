@@ -32,6 +32,7 @@ interface ServiceResponse {
   } | null;
 }
 
+// Handle GET request to fetch the last payment details for a service
 export async function GET(
   request: Request,
   context: { params: { serviceCode: string } }
