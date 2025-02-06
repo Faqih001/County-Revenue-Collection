@@ -15,6 +15,8 @@ const intasend = new IntaSend(
   'ISSecretKey_test_62c9506e-2eb1-4432-8639-b3502a14d9a6',
   true
 );
+
+// Types and interfaces for Payment Request, service data
 interface ServiceData {
   usageType: string;
   reading?: string;
