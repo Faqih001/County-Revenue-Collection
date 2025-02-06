@@ -71,6 +71,8 @@ interface PaymentRequest {
 
 // Helper function to ensure user exists
 async function ensureUser(userId: string, clerkUser: any) {
+
+  // Get or create user in the database
   let [user] = await db
     .select()
     .from(users)
