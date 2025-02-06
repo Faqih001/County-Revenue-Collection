@@ -44,7 +44,7 @@ export async function GET(
     const { serviceCode } = context.params;
     const { userId } = await auth();
     
-    //
+    // Return unauthorized if user ID is not available
     if (!userId) {
       return NextResponse.json(
         { success: false, message: 'Unauthorized' },
