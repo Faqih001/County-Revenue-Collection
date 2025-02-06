@@ -5,6 +5,8 @@ import { sum, count } from 'drizzle-orm';
 
 // Get total revenue and total transactions
 export const GET = async (request: Request) => {
+
+  // Fetch total revenue and total transactions
   try {
     const totalRevenue = await db
       .select({
