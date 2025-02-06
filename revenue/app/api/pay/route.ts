@@ -52,6 +52,8 @@ export async function POST(request: Request) {
 
 // Function to send an email to the user with the receipt for the services
 const sendEmail = async (email: string, first_name: string, services) => {
+
+    // Try to send the email using the Resend email service
     try {
         const { data, error } = await resend.emails.send({
             from: 'Revenue <collins@bistretech.com>',
