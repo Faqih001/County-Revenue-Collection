@@ -213,6 +213,7 @@ export async function POST(request: Request) {
         .where(eq(waterReadings.service_account_id, serviceAccount.id))
         .orderBy(desc(waterReadings.reading_date))
         .limit(1);
+
       // Calculate consumption from last reading
       const consumption = lastReading 
         ? currentReading - Number(lastReading.current_reading)
@@ -230,7 +231,7 @@ export async function POST(request: Request) {
         .returning();
     }
 
-    // Update email sending section
+// Update email sending section
 try {
   const emailData: EmailTemplateProps = {
     firstName: clerkUser.firstName || 'Valued Customer', // Provide fallback
@@ -258,6 +259,7 @@ try {
     }
   };
 
+  // Send email using Resend API
   const { data, error } = await resend.emails.send({
     from: 'Revenue System <collins@bistretech.com>',
     to: [emailData.email],
