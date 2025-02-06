@@ -55,6 +55,7 @@ const sendEmail = async (email: string, first_name: string, services) => {
 
     // Try to send the email using the Resend email service
     try {
+        // Send the email with the receipt template
         const { data, error } = await resend.emails.send({
             from: 'Revenue <collins@bistretech.com>',
             to: email,
