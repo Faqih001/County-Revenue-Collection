@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { EmailTemplate } from '@/components/ui/email';
 import { Resend } from 'resend';
 
+// Define the handler function that will be called when the server receives a request
 const resend = new Resend(process.env.RESEND_API);
 
 let intasend = new IntaSend(
