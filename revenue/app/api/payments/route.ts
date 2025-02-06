@@ -94,6 +94,8 @@ async function ensureUser(userId: string, clerkUser: any) {
 
 // Helper function to get or create service account
 async function getServiceAccount(userId: string, serviceCode: string, accountNumber: string) {
+
+  // Get or create service account in the database
   let [serviceAccount] = await db
     .select()
     .from(serviceAccounts)
