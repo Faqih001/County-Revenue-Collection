@@ -13,6 +13,7 @@ let intasend = new IntaSend(
     true,
 );
 
+// POST handler function to charge the user for the services
 export async function POST(request: Request) {
     const requestBody = await request.json();
     console.log('Charge request:', requestBody);
