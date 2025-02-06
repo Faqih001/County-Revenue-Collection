@@ -15,6 +15,7 @@ let intasend = new IntaSend(
 
 // POST handler function to charge the user for the services
 export async function POST(request: Request) {
+    // Get the first name, last name, email, amount, and services from the request body
     const requestBody = await request.json();
     console.log('Charge request:', requestBody);
 
