@@ -8,6 +8,7 @@ import { eq, desc, and } from 'drizzle-orm';
 import { EmailTemplate } from '@/components/ui/email';
 const IntaSend = require('intasend-node');
 
+// Initialize Resend and IntaSend clients
 const resend = new Resend(process.env.RESEND_API);
 const intasend = new IntaSend(
   'ISPubKey_test_eda9a8be-bbc9-4f5d-a0ef-54a85960789c',
