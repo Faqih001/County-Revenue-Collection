@@ -6,6 +6,7 @@ import { Resend } from 'resend';
 // Define the handler function that will be called when the server receives a request
 const resend = new Resend(process.env.RESEND_API);
 
+// Intasend payment gateway instance with test keys
 let intasend = new IntaSend(
     'ISPubKey_test_eda9a8be-bbc9-4f5d-a0ef-54a85960789c',
     'ISSecretKey_test_62c9506e-2eb1-4432-8639-b3502a14d9a6',
