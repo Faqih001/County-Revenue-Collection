@@ -137,7 +137,7 @@ export async function POST(request: Request) {
       );
     }
 
-    //
+    // Get the current user from Clerk authentication
     const clerkUser = await currentUser();
     if (!clerkUser) {
       return NextResponse.json(
