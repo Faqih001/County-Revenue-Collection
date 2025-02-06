@@ -122,6 +122,8 @@ async function getServiceAccount(userId: string, serviceCode: string, accountNum
 
 // Payment route handler function to process payment requests
 export async function POST(request: Request) {
+
+  //Try to process the payment request and catch any errors
   try {
     const { userId } = await auth();
     if (!userId) {
