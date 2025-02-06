@@ -78,6 +78,7 @@ async function ensureUser(userId: string, clerkUser: any) {
     .from(users)
     .where(eq(users.id, userId));
 
+  // Create user if not found
   if (!user) {
     [user] = await db.insert(users)
       .values({
