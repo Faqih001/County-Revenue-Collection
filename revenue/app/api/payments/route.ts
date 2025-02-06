@@ -213,7 +213,7 @@ export async function POST(request: Request) {
         .where(eq(waterReadings.service_account_id, serviceAccount.id))
         .orderBy(desc(waterReadings.reading_date))
         .limit(1);
-      
+      // Calculate consumption from last reading
       const consumption = lastReading 
         ? currentReading - Number(lastReading.current_reading)
         : currentReading;
