@@ -52,6 +52,7 @@ export async function GET(
       );
     }
 
+    // Fetch the last payment details for the service
     const [account] = await db
       .select()
       .from(serviceAccounts)
