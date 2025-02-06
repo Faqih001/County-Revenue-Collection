@@ -120,6 +120,7 @@ async function getServiceAccount(userId: string, serviceCode: string, accountNum
   return serviceAccount;
 }
 
+// Payment route handler function to process payment requests
 export async function POST(request: Request) {
   try {
     const { userId } = await auth();
