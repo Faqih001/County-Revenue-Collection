@@ -3,6 +3,7 @@ import { db } from '@/lib/db/drizzle';
 import { payments } from '@/lib/db/schema';
 import { sum, count } from 'drizzle-orm';
 
+// Get total revenue and total transactions
 export const GET = async (request: Request) => {
   try {
     const totalRevenue = await db
