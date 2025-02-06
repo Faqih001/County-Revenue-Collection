@@ -38,6 +38,7 @@ export async function POST(request: Request) {
         return NextResponse.json(response);
 
     } catch (error: any) {
+        // Log the error message to the console and return a 500 status code with the error message
         const errorMessage = error instanceof Buffer ? error.toString() : error.message;
         console.error('Charge error:', errorMessage);
 
