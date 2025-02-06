@@ -19,6 +19,7 @@ export async function POST(request: Request) {
     const requestBody = await request.json();
     console.log('Charge request:', requestBody);
 
+    // Try to charge the user for the services using the IntaSend payment gateway
     try {
         const response = await intasend.collection().charge({
             first_name,
