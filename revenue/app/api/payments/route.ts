@@ -128,6 +128,8 @@ export async function POST(request: Request) {
 
     // Get the user ID from the Clerk authentication
     const { userId } = await auth();
+
+    // If the user ID is not found, return an unauthorized response
     if (!userId) {
       return NextResponse.json(
         { success: false, message: 'Unauthorized' }, 
@@ -135,6 +137,7 @@ export async function POST(request: Request) {
       );
     }
 
+    //
     const clerkUser = await currentUser();
     if (!clerkUser) {
       return NextResponse.json(
