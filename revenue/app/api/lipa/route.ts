@@ -297,6 +297,7 @@ async function saveWaterRecord(
       });
   
     } catch (error) {
+      // Handle payment processing error
       console.error('Payment processing error:', error);
       return handleError(error);
     }
