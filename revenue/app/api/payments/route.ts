@@ -151,6 +151,7 @@ export async function POST(request: Request) {
     // Ensure user exists in our database
     await ensureUser(userId, clerkUser);
 
+    // Parse the payment request body
     const rawBody = await request.json();
     console.log('Payment request:', rawBody);
     
