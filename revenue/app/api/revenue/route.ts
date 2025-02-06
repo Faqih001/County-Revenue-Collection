@@ -8,6 +8,8 @@ export const GET = async (request: Request) => {
 
   // Fetch total revenue and total transactions
   try {
+
+    // Fetch total revenue and total transactions
     const totalRevenue = await db
       .select({
         total_amount: sum(payments.amount),
