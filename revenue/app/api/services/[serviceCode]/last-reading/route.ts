@@ -4,6 +4,7 @@ import { db } from '@/lib/db/drizzle';
 import { serviceAccounts, waterReadings, payments } from '@/lib/db/schema';
 import { eq, desc, and } from 'drizzle-orm';
 
+// Define the response schema for the service
 interface ServiceResponse {
   amount: string | null;
   date: Date | null;
