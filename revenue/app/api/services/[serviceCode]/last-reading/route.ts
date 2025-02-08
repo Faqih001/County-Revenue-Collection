@@ -115,6 +115,7 @@ export async function GET(
         .orderBy(desc(waterReadings.reading_date))
         .limit(1);
 
+        // Set the response details for water
       if (reading) {
         response = {
           ...response,
@@ -154,6 +155,7 @@ export async function GET(
       }
     }
 
+    //
     return NextResponse.json({
       success: true,
       data: {
