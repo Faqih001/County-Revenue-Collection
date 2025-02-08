@@ -65,6 +65,7 @@ export async function GET(
       .orderBy(desc(serviceAccounts.created_at))
       .limit(1);
 
+    // If account is not found, return null
     if (!account) {
       return NextResponse.json({
         success: true,
