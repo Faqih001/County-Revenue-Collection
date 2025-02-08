@@ -155,7 +155,7 @@ export async function GET(
       }
     }
 
-    //
+    // Return response
     return NextResponse.json({
       success: true,
       data: {
