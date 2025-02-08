@@ -88,6 +88,7 @@ export async function GET(
       .orderBy(desc(payments.payment_date))
       .limit(1);
 
+    // Return the last payment details for the service
     let response: ServiceResponse = {
       amount: lastPayment?.amount || null,
       date: lastPayment?.payment_date || null,
