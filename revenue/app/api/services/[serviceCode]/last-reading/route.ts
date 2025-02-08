@@ -73,6 +73,7 @@ export async function GET(
       });
     }
 
+    // Fetch the last payment details for the service
     const [lastPayment] = await db
       .select({
         id: payments.id,
