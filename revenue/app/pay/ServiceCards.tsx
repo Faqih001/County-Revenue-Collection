@@ -18,6 +18,7 @@ interface ServiceCardProps {
   onSelect: (service: MunicipalService) => void;
 }
 
+// Define the ServiceDetails interface
 interface ServiceDetails {
   lastPayment: {
     amount: string;
