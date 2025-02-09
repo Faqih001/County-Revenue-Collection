@@ -86,6 +86,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) => {
     }
   };
 
+  // Define the getRatePreview function to get the rate preview based on the service code
   const getRatePreview = () => {
     switch (service.service_code) {
       case 'PRK':
