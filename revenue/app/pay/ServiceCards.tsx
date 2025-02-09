@@ -50,6 +50,8 @@ interface ServiceDetails {
 
 // Define the ServiceCard component that takes a service and onSelect function as props
 const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) => {
+
+  // Define the state variables for the details, loading state, and error message
   const [details, setDetails] = useState<ServiceDetails | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
