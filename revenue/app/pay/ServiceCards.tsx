@@ -53,6 +53,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) => {
 
   // Define the state variables for the details, loading state, and error message
   const [details, setDetails] = useState<ServiceDetails | null>(null);
+
+  // Define the loading state and error message state
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
