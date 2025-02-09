@@ -12,6 +12,7 @@ interface MunicipalService {
   requirements?: string[];
 }
 
+// Define the ServiceCardProps interface
 interface ServiceCardProps {
   service: MunicipalService;
   onSelect: (service: MunicipalService) => void;
