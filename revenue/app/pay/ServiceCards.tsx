@@ -104,6 +104,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) => {
     }
   };
 
+  // Render the ServiceCard component
   return (
     <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
       {/* Header */}
