@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { formatCurrency } from './utils';
 
+//  Define the MunicipalService interface
 interface MunicipalService {
   service_code: string;
   service_name: string;
