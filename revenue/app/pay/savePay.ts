@@ -12,6 +12,8 @@ export const GET = async (request: Request) => {
 
   // Fetch all payments from the database and return them as JSON
   try {
+
+    // Fetch all payments from the database
     const allPayments = await db
       .select({
         id: payments.id,
