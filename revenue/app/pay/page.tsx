@@ -11,6 +11,7 @@ export default function ServicesPage() {
   // Define the selectedService state variable and the setSelectedService function
   const [selectedService, setSelectedService] = useState<MunicipalService | null>(null);
 
+  // Define the handlePaymentSubmit function that logs the payment data to the console
   const handlePaymentSubmit = (formData: any) => {
     console.log('Payment data:', formData);
     // Handle payment processing
