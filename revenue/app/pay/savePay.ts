@@ -29,9 +29,10 @@ export const GET = async (request: Request) => {
       .leftJoin(users, eq(serviceAccounts.user_id, users.id))
       .orderBy(desc(payments.payment_date));
 
+    // Return the payments as JSON response with a success status
     return NextResponse.json({ success: true, data: allPayments });
   } catch (error) {
     console.error('Error fetching payments:', error);
     return NextResponse.json({ success: false, message: 'Failed to fetch payments' }, { status: 500 });
   }
-};
+};  
