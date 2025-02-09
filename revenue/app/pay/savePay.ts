@@ -9,6 +9,8 @@ import { eq } from 'drizzle-orm/expressions';
 
 // GET /api/payments - Fetch all payments from the database and return them as JSON
 export const GET = async (request: Request) => {
+
+  // Fetch all payments from the database and return them as JSON
   try {
     const allPayments = await db
       .select({
