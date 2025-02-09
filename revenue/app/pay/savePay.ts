@@ -32,6 +32,8 @@ export const GET = async (request: Request) => {
     // Return the payments as JSON response with a success status
     return NextResponse.json({ success: true, data: allPayments });
   } catch (error) {
+
+    // Log the error and return an error response with a failure status
     console.error('Error fetching payments:', error);
     return NextResponse.json({ success: false, message: 'Failed to fetch payments' }, { status: 500 });
   }
