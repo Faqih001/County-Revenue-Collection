@@ -72,6 +72,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) => {
       // Fetch the last reading for the service from the API
       const response = await fetch(`/api/services/${service.service_code}/last-reading`);
       const data = await response.json();
+
+      // If the request is successful, set the details state
       if (data.success) {
         setDetails(data.data);
       } else {
