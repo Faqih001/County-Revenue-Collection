@@ -58,6 +58,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // Fetch the service details when the component mounts
   useEffect(() => {
     fetchServiceDetails();
   }, [service.service_code]);
