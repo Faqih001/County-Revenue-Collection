@@ -63,7 +63,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) => {
     fetchServiceDetails();
   }, [service.service_code]);
 
+  // Define the fetchServiceDetails function to fetch the service details
   const fetchServiceDetails = async () => {
+
+    // Set the loading state to true
     try {
       const response = await fetch(`/api/services/${service.service_code}/last-reading`);
       const data = await response.json();
