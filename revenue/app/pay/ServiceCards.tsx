@@ -68,6 +68,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) => {
 
     // Set the loading state to true
     try {
+
+      // Fetch the last reading for the service from the API
       const response = await fetch(`/api/services/${service.service_code}/last-reading`);
       const data = await response.json();
       if (data.success) {
