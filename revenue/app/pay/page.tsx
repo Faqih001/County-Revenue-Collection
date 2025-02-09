@@ -7,6 +7,8 @@ import servicesData from './data.json';
 
 // ServicePage component that renders the municipal services payment portal page 
 export default function ServicesPage() {
+
+  // Define the selectedService state variable and the setSelectedService function
   const [selectedService, setSelectedService] = useState<MunicipalService | null>(null);
 
   const handlePaymentSubmit = (formData: any) => {
