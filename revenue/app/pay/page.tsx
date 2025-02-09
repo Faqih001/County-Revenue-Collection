@@ -5,6 +5,7 @@ import ServiceCard from './ServiceCards';
 import ServiceForm from './ServiceForms';
 import servicesData from './data.json';
 
+// ServicePage component that renders the municipal services payment portal page 
 export default function ServicesPage() {
   const [selectedService, setSelectedService] = useState<MunicipalService | null>(null);
 
