@@ -10,6 +10,7 @@ interface ServiceFormProps {
   onCancel: () => void;
 }
 
+// Service Form Component for different services 
 const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }) => {
   const [formData, setFormData] = useState<any>({});
   const [calculatedCost, setCalculatedCost] = useState<number>(0);
