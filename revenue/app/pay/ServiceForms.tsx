@@ -100,6 +100,7 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }
     calculateCost();
   }, [formData]);
 
+  // Function to render form fields based on service code
   const renderServiceForm = () => {
     switch (service.service_code) {
       case 'PRK':
