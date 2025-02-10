@@ -31,6 +31,7 @@ export default function RevenuePage() {
     // If no service is selected, return null to render nothing
     if (!serviceDetails) return null;
 
+    // Render the form based on the service type
     switch(serviceDetails.service_type) {
       case 'metered':
         return <MeteredServiceForm service={serviceDetails} />;
