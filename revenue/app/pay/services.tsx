@@ -12,6 +12,7 @@ import {
 } from '@mantine/core';
 import { useQuery } from '@tanstack/react-query';
 
+//Revenue Page Components for different services that will be rendered based on the selected service
 export default function RevenuePage() {
   const [selectedService, setSelectedService] = useState('');
   const [serviceDetails, setServiceDetails] = useState(null);
