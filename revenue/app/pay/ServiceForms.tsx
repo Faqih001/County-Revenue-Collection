@@ -27,6 +27,7 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }
   const labelClassName = "block text-sm font-medium text-gray-700 mb-1";
   const groupClassName = "space-y-1";
 
+  // Function to calculate cost based on form data
   const calculateCost = () => {
     switch (service.service_code) {
       case 'PRK':
