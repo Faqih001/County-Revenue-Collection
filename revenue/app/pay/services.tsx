@@ -14,6 +14,8 @@ import { useQuery } from '@tanstack/react-query';
 
 //Revenue Page Components for different services that will be rendered based on the selected service
 export default function RevenuePage() {
+
+  // State to store the selected service code and service details
   const [selectedService, setSelectedService] = useState('');
   const [serviceDetails, setServiceDetails] = useState(null);
 
