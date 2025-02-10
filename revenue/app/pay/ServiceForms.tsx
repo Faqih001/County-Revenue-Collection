@@ -394,6 +394,7 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }
         body: JSON.stringify(paymentData),
       });
 
+      // Handle response if not successful
       if (!response.ok) {
         const error = await response.json();
         throw new Error(error.message || 'Payment failed');
