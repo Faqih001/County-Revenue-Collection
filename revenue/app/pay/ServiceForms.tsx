@@ -375,6 +375,8 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }
 
     // Payment data to be sent to the server
     try {
+
+      // Payment data to be sent to the server
       const paymentData = {
         ...formData,
         calculatedCost,
