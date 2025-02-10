@@ -385,6 +385,7 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }
         timestamp: new Date().toISOString()
       };
 
+      // Send payment data to the server
       const response = await fetch('/api/payments', {
         method: 'POST',
         headers: {
