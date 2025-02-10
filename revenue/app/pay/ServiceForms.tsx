@@ -95,6 +95,7 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }
     }
   };
 
+  // UseEffect hook to calculate cost when form data changes
   useEffect(() => {
     calculateCost();
   }, [formData]);
