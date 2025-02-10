@@ -25,6 +25,7 @@ export default function RevenuePage() {
     queryFn: () => fetch('/api/services').then(res => res.json())
   });
 
+  // Function to render the form based on the selected service
   const renderServiceForm = () => {
     if (!serviceDetails) return null;
 
