@@ -419,6 +419,7 @@ if (result.success && result.data.url) {
   }, 1000);
 
 } else {
+  // Show error toast if payment link not found
   toast.error('Payment link not found', {
     duration: 3000,
     position: 'top-center',
