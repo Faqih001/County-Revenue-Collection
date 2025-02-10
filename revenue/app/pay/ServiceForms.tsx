@@ -16,6 +16,8 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }
   // State for form data and calculated cost 
   const [formData, setFormData] = useState<any>({});
   const [calculatedCost, setCalculatedCost] = useState<number>(0);
+
+  // State for form submission status
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const inputClassName = "mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500";
