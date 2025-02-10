@@ -19,6 +19,7 @@ export default function RevenuePage() {
   const [selectedService, setSelectedService] = useState('');
   const [serviceDetails, setServiceDetails] = useState(null);
 
+  // Fetch municipal services from the API using react-query
   const { data: services, isLoading } = useQuery({
     queryKey: ['municipal-services'],
     queryFn: () => fetch('/api/services').then(res => res.json())
