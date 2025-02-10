@@ -12,6 +12,8 @@ interface ServiceFormProps {
 
 // Service Form Component for different services 
 const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }) => {
+
+  // State for form data and calculated cost 
   const [formData, setFormData] = useState<any>({});
   const [calculatedCost, setCalculatedCost] = useState<number>(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
