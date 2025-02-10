@@ -373,6 +373,7 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Payment data to be sent to the server
     try {
       const paymentData = {
         ...formData,
