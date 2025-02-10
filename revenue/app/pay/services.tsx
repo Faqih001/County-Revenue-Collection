@@ -27,6 +27,8 @@ export default function RevenuePage() {
 
   // Function to render the form based on the selected service
   const renderServiceForm = () => {
+
+    // If no service is selected, return null to render nothing
     if (!serviceDetails) return null;
 
     switch(serviceDetails.service_type) {
