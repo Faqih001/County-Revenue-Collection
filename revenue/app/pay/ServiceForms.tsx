@@ -29,6 +29,8 @@ const ServiceForm: React.FC<ServiceFormProps> = ({ service, onSubmit, onCancel }
 
   // Function to calculate cost based on form data
   const calculateCost = () => {
+
+    // Switch statement to calculate cost based on service code
     switch (service.service_code) {
       case 'PRK':
         if (!formData.duration || !formData.vehicleType) return;
