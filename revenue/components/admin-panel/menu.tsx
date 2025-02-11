@@ -21,6 +21,7 @@ interface MenuProps {
   isOpen: boolean | undefined;
 }
 
+// Define the Menu component that will be rendered by the server and the client
 export function Menu({ isOpen }: MenuProps) {
   const pathname = usePathname();
   const menuList = getMenuList(pathname);
