@@ -7,6 +7,8 @@ import { useQuery } from '@tanstack/react-query'
 
 // Transaction History for the user to view their recent transactions on the platform
 export function TransactionHistory() {
+
+  // Fetch transactions from the API using react-query
   const { data: transactions } = useQuery({
     queryKey: ['transactions'],
     queryFn: () => fetch('/api/transactions').then(res => res.json())
