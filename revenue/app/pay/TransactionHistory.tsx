@@ -5,6 +5,7 @@
 import { Table, Text } from '@mantine/core'
 import { useQuery } from '@tanstack/react-query'
 
+// Transaction History for the user to view their recent transactions on the platform
 export function TransactionHistory() {
   const { data: transactions } = useQuery({
     queryKey: ['transactions'],
