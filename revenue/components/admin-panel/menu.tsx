@@ -16,6 +16,7 @@ import {
   TooltipProvider
 } from "@/components/ui/tooltip";
 
+// Define the MenuProps type that represents the props of the Menu component
 interface MenuProps {
   isOpen: boolean | undefined;
 }
