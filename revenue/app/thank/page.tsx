@@ -2,6 +2,8 @@ import Head from 'next/head';
 
 // Define the ThankYou component that will be rendered by the server and the client
 export default function ThankYou() {
+
+  // Return the ThankYou component
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <Head>
