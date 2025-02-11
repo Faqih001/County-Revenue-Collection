@@ -23,6 +23,7 @@ interface MenuProps {
 
 // Define the Menu component that will be rendered by the server and the client
 export function Menu({ isOpen }: MenuProps) {
+  // Get the current pathname
   const pathname = usePathname();
   const menuList = getMenuList(pathname);
 
