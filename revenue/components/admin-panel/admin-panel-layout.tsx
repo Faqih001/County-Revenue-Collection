@@ -17,6 +17,8 @@ export default function AdminPanelLayout({
 
   // If the sidebar object is not loaded, return null
   if (!sidebar) return null;
+
+  // Get the open state and settings from the sidebar object
   const { getOpenState, settings } = sidebar;
   return (
     <>
