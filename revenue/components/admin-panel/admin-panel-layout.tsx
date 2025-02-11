@@ -6,6 +6,7 @@ import { useSidebar } from "@/hooks/use-sidebar";
 import { useStore } from "@/hooks/use-store";
 import { cn } from "@/lib/utils";
 
+// Define the AdminPanelLayout component that will be rendered by the server and the client
 export default function AdminPanelLayout({
   children
 }: {
