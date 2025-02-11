@@ -28,6 +28,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { usePathname } from "next/navigation";
 
+// Define the Submenu type that represents a submenu item
 type Submenu = {
   href: string;
   label: string;
