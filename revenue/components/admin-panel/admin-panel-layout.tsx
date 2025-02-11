@@ -14,6 +14,8 @@ export default function AdminPanelLayout({
 }) {
   // Get the sidebar object from the useSidebar hook
   const sidebar = useStore(useSidebar, (x) => x);
+
+  // If the sidebar object is not loaded, return null
   if (!sidebar) return null;
   const { getOpenState, settings } = sidebar;
   return (
