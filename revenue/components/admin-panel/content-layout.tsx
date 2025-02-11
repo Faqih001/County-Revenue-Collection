@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/admin-panel/navbar";
 
+// Define the ContentLayoutProps type that represents the props of the ContentLayout component
 interface ContentLayoutProps {
   title: string;
   children: React.ReactNode;
