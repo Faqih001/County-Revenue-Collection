@@ -58,6 +58,7 @@ export function CollapseMenuButton({
   );
   const [isCollapsed, setIsCollapsed] = useState<boolean>(isSubmenuActive);
 
+  // Return the CollapseMenuButton component
   return isOpen ? (
     <Collapsible
       open={isCollapsed}
