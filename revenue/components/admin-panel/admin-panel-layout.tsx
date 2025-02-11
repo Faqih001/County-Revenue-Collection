@@ -20,6 +20,8 @@ export default function AdminPanelLayout({
 
   // Get the open state and settings from the sidebar object
   const { getOpenState, settings } = sidebar;
+
+  // Return the AdminPanelLayout component
   return (
     <>
       <Sidebar />
