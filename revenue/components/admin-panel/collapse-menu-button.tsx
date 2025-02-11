@@ -44,6 +44,7 @@ interface CollapseMenuButtonProps {
   isOpen: boolean | undefined;
 }
 
+// Define the CollapseMenuButton component that will be rendered by the server and the client
 export function CollapseMenuButton({
   icon: Icon,
   label,
