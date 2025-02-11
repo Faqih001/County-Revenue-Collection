@@ -6,6 +6,7 @@ interface ContentLayoutProps {
   children: React.ReactNode;
 }
 
+// Define the ContentLayout component that will be rendered by the server and the client
 export function ContentLayout({ title, children }: ContentLayoutProps) {
   return (
     <div>
