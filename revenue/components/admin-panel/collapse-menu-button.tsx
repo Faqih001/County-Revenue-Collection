@@ -35,6 +35,7 @@ type Submenu = {
   active?: boolean;
 };
 
+// Define the CollapseMenuButtonProps type that represents the props of the CollapseMenuButton component
 interface CollapseMenuButtonProps {
   icon: LucideIcon;
   label: string;
